@@ -1,0 +1,11 @@
+Sentence 0 has a sentiment score of 0.699999988079071
+Sentence 1 has a sentiment score of 0.20000000298023224
+Sentence 2 has a sentiment score of 0.699999988079071
+Sentence 3 has a sentiment score of -0.10000000149011612
+Sentence 4 has a sentiment score of 0.0
+Sentence 5 has a sentiment score of -0.6000000238418579
+Sentence 6 has a sentiment score of -0.10000000149011612
+Sentence 7 has a sentiment score of 0.5
+Sentence 8 has a sentiment score of 0.4000000059604645
+Sentence 9 has a sentiment score of 0.8999999761581421
+Overall Sentiment: score of 0.20000000298023224 with magnitude of 4.599999904632568
