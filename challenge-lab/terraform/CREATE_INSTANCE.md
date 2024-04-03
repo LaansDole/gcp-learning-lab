@@ -1,1 +1,0 @@
-The resource block has two strings before opening the block: the resource type and the resource name. For this lab, the resource type is `google_compute_instance` and the name is `terraform`. The prefix of the type maps to the provider: `google_compute_instance` automatically tells Terraform that it is managed by the Google provider.
