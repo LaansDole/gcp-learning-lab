@@ -103,7 +103,7 @@ function getSelectedText() {
 function retrieveSentiment(line) {
     //  TODO:  Call the Natural Language API with the line given
     //         and return the sentiment value.
-    var apiKey = "AIzaSyBbdL9oSioiwHbHVL6QAezCFjx74bCE7tY";
+    var apiKey = "your_api_key";
     var apiEndpoint = 'https://language.googleapis.com/v1/documents:analyzeSentiment?key=' + apiKey;
 
     //  Create a structure with the text, its language, its type,
