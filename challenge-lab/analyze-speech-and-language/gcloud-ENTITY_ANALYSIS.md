@@ -36,5 +36,3 @@ gcloud ml language analyze-entities --content="your-content" > result.json
 ```shell
 cat result.json
 ```
-
-## 

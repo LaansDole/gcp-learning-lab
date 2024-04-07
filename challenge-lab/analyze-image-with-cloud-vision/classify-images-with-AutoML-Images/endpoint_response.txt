@@ -1,0 +1,22 @@
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 67354  100   295  100 67059    146  33213  0:00:02  0:00:02 --:--:-- 33360
+{
+  "predictions": [
+    {
+      "ids": [
+        "659305654921461760"
+      ],
+      "displayNames": [
+        "cumulonimbus"
+      ],
+      "confidences": [
+        0.992651284
+      ]
+    }
+  ],
+  "deployedModelId": "2918618431559303168",
+  "model": "projects/1030115194620/locations/us-central1/models/467169296502489088",
+  "modelDisplayName": "cloud-vertex-model-demo",
+  "modelVersionId": "1"
+}
