@@ -110,8 +110,8 @@ Once that command completes, click the `Refresh` button at the top of the Storag
 ```shell
 python3 image_to_base64_json.py <your_image_url>
 ```
-- You should see the line `JSON data has been written to predict_image.json`
-*You can also use the exising Google Cloud Storage and upload your image file. Remember to give public access to the uploaded image file.*
+- You should see the line `JSON data has been written to predict_image.json`.
+***You can also use the exising `Google Cloud Storage` and upload your image file. Remember to give public access to the uploaded image file.***
 4. View the JSON file:
 ```cat
 cat predict_image.json
