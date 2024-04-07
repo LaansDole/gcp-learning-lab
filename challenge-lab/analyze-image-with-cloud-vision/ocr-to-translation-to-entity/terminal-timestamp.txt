@@ -1,0 +1,23 @@
+student_01_8ce1d113781d@cloudshell:~ (qwiklabs-gcp-00-c34f476876c4)$ nano translation-request.json
+student_01_8ce1d113781d@cloudshell:~ (qwiklabs-gcp-00-c34f476876c4)$ STR=$(jq .responses[0].textAnnotations[0].description ocr-response.json) && STR="${STR//\"}" && sed -i "s|your_text_here|$STR|g" translation-request.json
+student_01_8ce1d113781d@cloudshell:~ (qwiklabs-gcp-00-c34f476876c4)$ curl -s -X POST -H "Content-Type: application/json" --data-binary @translation-request.json https://translation.googleapis.com/language/translate/v2?key=${API_KEY} > translation-response.json                                                             
+student_01_8ce1d113781d@cloudshell:~ (qwiklabs-gcp-00-c34f476876c4)$ cat translation-response.json
+{
+  "data": {
+    "translations": [
+      {
+        "translatedText": "THE PUBLIC GOOD dispatches For Obama, the mustard is from Dijon",
+        "detectedSourceLanguage": "fr"
+      }
+    ]
+  }
+}
+student_01_8ce1d113781d@cloudshell:~ (qwiklabs-gcp-00-c34f476876c4)$ nano nl-request.json
+student_01_8ce1d113781d@cloudshell:~ (qwiklabs-gcp-00-c34f476876c4)$ STR=$(jq .data.translations[0].translatedText  translation-response.json) && STR="${STR//\"}" && sed -i "s|your_text_here|$STR|g" nl-request.jsonstudent_01_8ce1d113781d@cloudshell:~ (qwiklabs-gcp-00-c34f476876c4)$ cat nl-request.json 
+{
+  "document":{
+    "type":"PLAIN_TEXT",
+    "content":"THE PUBLIC GOOD dispatches For Obama, the mustard is from Dijon"
+  },
+  "encodingType":"UTF8"
+}
